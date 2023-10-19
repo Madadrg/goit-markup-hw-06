@@ -800,20 +800,19 @@ border-color: var(--highlight-color);
 
 
   .close-btn {
-    width: 30px;
-   height: 30px;
-   margin-top: 8px;
-   margin-right: 8px;
-   left: 1026px;
-   border-radius: 50%;
-   border: 1px solid #0000001A;
-   background-color: #FFFFFF;
-   cursor: pointer;
-   position: absolute;
-   right:0px;
-   font-size: 23px;
-   text-align: center;
+    box-sizing: content-box;
+    width: var(--icon-normal-size);
+    height: var(--icon-normal-size);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+  right: 14px;
   }
+
+  .close-btn:hover {fill: var(--highlight-color);}
 
   .overlay-text {
     position: absolute;
@@ -936,6 +935,7 @@ width: 100%;
     color: rgba(117, 117, 117, 1);
     text-align: start;
   }
+
 
   
   .terms-and-conditions-container {
