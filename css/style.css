@@ -1098,3 +1098,7 @@ footer,
 main {
 width: 100%;
    }
+
+   .form-section {
+    text-align: start;
+   }
