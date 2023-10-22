@@ -934,52 +934,8 @@ border-color: var(--highlight-color);
     text-align: start;
   }
 
-
   
-  .terms-and-conditions-container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    cursor: pointer;
-  }
   
-  .terms-and-conditions {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .terms-and-conditions span {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
-  }
-  
-  .terms-and-conditions span a {
-    color: #2196f3;
-  }
-  
-  .terms-and-conditions-label svg {
-    width: 13px;
-    height: 13px;
-    position: absolute;
-    top: calc(50% - 7.5px);
-    left: 0;
-  }
-  
-  .terms-and-conditions-check:not(:checked) {
-    visibility: hidden;
-  }
-  
-  .terms-and-conditions-check:checked + label > svg {
-    display: none;
-  }
-
   .button-form {
     width: 200px;
     height: 50px;
@@ -1105,3 +1061,78 @@ width: 100%;
    .form-section {
     text-align: start;
    }
+
+
+.terms-and-conditions-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .terms-and-conditions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .terms-and-conditions span {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  
+  .terms-and-conditions span a {
+    color: #2196f3;
+  }
+  
+  .terms-and-conditions-label svg {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: calc(50% - 7.5px);
+    left: 0;
+  }
+  
+  .terms-and-conditions-check:not(:checked) {
+    visibility: hidden;
+  }
+  
+  .terms-and-conditions-check:checked + label > svg {
+    display: none;
+  }
+
+
+
+  terms-and-conditions-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  }
+
+  terms-and-conditions-check {
+    appearance: none;
+    position: absolute;
+  }
+
+
+   .icon-checkbox {
+    display: block;
+    height: 15px;
+    width: 16px;
+   }
+
+.terms-and-conditions-check:checked + .checkmark {
+background-size: contain;
+margin-left: auto;
+margin-right: auto;
+background-color: var(--highlight-color);
+border-color: var(--highlight-color);
+}
